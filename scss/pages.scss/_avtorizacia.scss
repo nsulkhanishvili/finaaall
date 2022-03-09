@@ -1,0 +1,184 @@
+.s-1 {
+    background-color: $main-color3;
+  
+    & > .container {
+      @extend %container;
+      text-align: center;
+      padding-top: 90px;
+  
+      & > .content {
+        & > a > img {
+          margin-bottom: 56px;
+        }
+  
+        & > h5 {
+          color: $main-color1;
+          font-size: 40px;
+          margin-bottom: 25px;
+  
+          @media (max-width: $smart-break) {
+            font-size: 32px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 25px;
+          }
+        }
+  
+        & > h6 {
+          color: $main-color1;
+          font-size: 30px;
+          margin-bottom: 40px;
+  
+          & > a {
+            color: $main-color1;
+            text-decoration: underline;
+          }
+  
+          @media (max-width: $smart-break) {
+            font-size: 25px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 18px;
+          }
+        }
+      }
+      & > .forms {
+        width: 620px;
+        margin: 0 auto;
+  
+        & > form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+          & > input[type="email"] {
+            width: 600px;
+            padding: 13px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin-bottom: 30px;
+  
+            @media (max-width: $smart-break) {
+              width: 500px;
+              margin-bottom: 20px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 380px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 240px;
+            }
+          }
+  
+          & > input[type="password"] {
+            width: 600px;
+            padding: 13px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin-bottom: 20px;
+  
+            @media (max-width: $smart-break) {
+              width: 500px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 380px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 240px;
+            }
+          }
+  
+          & > #email_error {
+            margin-top: 20px;
+            width: 490px;
+            font-size: 20px;
+            color: #db4437;
+            display: none;
+            margin-bottom: 14px;
+  
+            @media (max-width: $smart-break) {
+                width: 300px;
+                font-size: 15px;
+            }
+  
+            @media (max-width: 320px) {
+                width: 200px;
+                font-size: 14px;
+            }
+          }
+  
+          & > .forgot-pass {
+            & > a > p {
+              font-size: 20px;
+              color: $main-color1;
+              text-decoration: underline;
+              margin-bottom: 25px;
+              margin-left: 400px;
+  
+              @media (max-width:776px) {
+                  margin-left: 300px;
+              }
+  
+              @media (max-width:570px) {
+                  margin: 0 auto;
+                  font-size: 17px;
+                  margin-bottom: 18px;
+              }
+            }
+          }
+  
+          & > input[type="submit"] {
+            width: 440px;
+            margin: 0 auto;
+            background-color: $main-color1;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 56px;
+            cursor: pointer;
+  
+            @media (max-width: $smart-break) {
+              width: 340px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 220px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 150px;
+            }
+          }
+  
+          & > input::placeholder {
+            color: #27536b;
+          }
+        }
+  
+        @media (max-width: $smart-break) {
+          width: 530px;
+          margin: 0 auto;
+        }
+  
+        @media (max-width: 550px) {
+          width: 400px;
+        }
+  
+        @media (max-width: $other-break) {
+          width: 260px;
+        }
+      }
+    }
+  }
+  

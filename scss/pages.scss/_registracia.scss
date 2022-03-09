@@ -1,0 +1,319 @@
+section {
+    background-color: $main-color3;
+  
+    .container {
+      @extend %container;
+      text-align: center;
+      padding-top: 90px;
+  
+      .first-box {
+        & > a > img {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 56px;
+        }
+  
+        & > h5 {
+          color: $main-color1;
+          font-size: 40px;
+          margin-bottom: 25px;
+  
+          @media (max-width: $smart-break) {
+            font-size: 32px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 25px;
+          }
+        }
+  
+        & > h6 {
+          color: $main-color1;
+          font-size: 30px;
+          margin-bottom: 40px;
+  
+          & > a {
+            color: $main-color1;
+            text-decoration: underline;
+          }
+  
+          @media (max-width: $smart-break) {
+            font-size: 25px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 20px;
+          }
+        }
+      }
+  
+      .form-wrapper {
+        width: 620px;
+        margin: 0 auto;
+  
+        & > form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+          & > input[type="email"] {
+            width: 600px;
+            padding: 13px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin-bottom: 30px;
+  
+            @media (max-width: $smart-break) {
+              width: 500px;
+              margin-bottom: 20px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 380px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 240px;
+            }
+          }
+  
+          & > input[type="password"] {
+            width: 600px;
+            padding: 13px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin-bottom: 60px;
+  
+            @media (max-width: $smart-break) {
+              width: 500px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 380px;
+              margin-bottom: 30px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 240px;
+            }
+          }
+  
+          & > input[type="submit"] {
+            width: 440px;
+            margin: 0 auto;
+            background-color: $main-color1;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 56px;
+            cursor: pointer;
+  
+            @media (max-width: $smart-break) {
+              width: 340px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 220px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 150px;
+            }
+          }
+  
+          & > input::placeholder {
+            color: #27536b;
+          }
+        }
+  
+        @media (max-width: $smart-break) {
+          width: 530px;
+          margin: 0 auto;
+        }
+  
+        @media (max-width: 550px) {
+          width: 400px;
+        }
+  
+        @media (max-width: $other-break) {
+          width: 260px;
+        }
+      }
+  
+      .line-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 620px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+  
+        & > span {
+          border-bottom: 2px #707070 solid;
+          width: 270px;
+          display: block;
+  
+          @media (max-width: $smart-break) {
+            width: 200px;
+          }
+  
+          @media (max-width: 480px) {
+            width: 160px;
+          }
+        }
+  
+        & > p {
+          color: #112d32;
+          font-size: 22px;
+  
+          @media (max-width: 480px) {
+            font-size: 16px;
+          }
+        }
+  
+        @media (max-width: $smart-break) {
+          width: 450px;
+        }
+  
+        @media (max-width: 480px) {
+          width: 260px;
+        }
+      }
+  
+      .second-box {
+        width: 620px;
+        margin: 0 auto;
+  
+        & > .first-strip {
+          @include flex-parms;
+          margin-bottom: 20px;
+  
+          & > button {
+            width: 300px;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            color: #665e5e;
+            font-size: 16px;
+            cursor: pointer;
+  
+            & > .fb-icon {
+              color: #4267b2;
+              font-size: 30px;
+              text-align: center;
+            }
+  
+            & > .google-icon {
+              color: #db4437;
+              font-size: 30px;
+              text-align: center;
+            }
+  
+            @media (max-width: $smart-break) {
+              width: 230px;
+              font-size: 14px;
+            }
+  
+            @media (max-width: 535px) {
+              width: 190px;
+              margin-bottom: 20px;
+            }
+          }
+  
+          @media (max-width: 535px) {
+              flex-direction: column;
+          }
+        }
+  
+        & > button {
+          width: 300px;
+          padding: 5px 0;
+          border: none;
+          border-radius: 5px;
+          color: #665e5e;
+          font-size: 16px;
+          cursor: pointer;
+          margin-bottom: 100px;
+  
+          & > i {
+            color: black;
+            font-size: 40px;
+            text-align: center;
+          }
+  
+          @media (max-width: $smart-break) {
+            width: 230px;
+            font-size: 14px;
+          }
+  
+          @media (max-width: 535px) {
+              width: 190px;
+              margin-bottom: 20px;
+              font-size: 15px;
+            }
+        }
+  
+        @media (max-width: $smart-break) {
+          width: 500px;
+          margin: 0 auto;
+        }
+  
+        @media (max-width: 535px) {
+          width: 270px;
+        }
+      }
+    }
+  }
+  
+  footer {
+    background-color: $main-color1;
+  
+    & > .container {
+      @extend %container;
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+  
+      & > .content {
+        width: 290px;
+        text-align: center;
+        & > h2 {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 20px;
+  
+          @media (max-width: $other-break) {
+              font-size: 24px;
+              margin-left: 14px;
+            }
+        }
+  
+        & > .icon {
+          & > a > i {
+            color: white;
+            font-size: 40px;
+            margin-left: 20px;
+          }
+        }
+  
+        @media (max-width: 535px) {
+          width: 240px;
+        }
+  
+        @media (max-width: $other-break) {
+          margin-top: 15px;
+          text-align: left;
+        }
+      }
+  
+      @media (max-width: $other-break) {
+          flex-direction: column;
+        }
+    }
+  }
+  

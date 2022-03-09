@@ -1,0 +1,11 @@
+
+@mixin flex-parms($justify:space-between, $alian:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alian;
+}
+
+@mixin container-parms($max, $width:100%){
+    max-width: $max;
+    width: $width;
+}

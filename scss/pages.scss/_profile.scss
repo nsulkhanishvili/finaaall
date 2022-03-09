@@ -1,0 +1,313 @@
+.profile {
+    font-family: 'Helvetica Neue LT GEO';
+}
+.profile {
+    .header {
+        background: $main-color1;
+        
+        .wrapper {
+
+            max-width: $container-size;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            padding-top: 50px;
+            .upper {
+                @include flex-parms;
+    
+                .logo {
+                    display:flex;
+                    align-items:flex-start;
+    
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+    
+                    h1 {
+                        font-size: $h1;
+                        font-weight: bold;
+                        color: $main-color3;
+                    }
+                }
+    
+                a {
+                    font-size: 25px;
+                    color: $main-color3;
+                }
+            }
+    
+            .bottom {
+                margin-top: 15px;
+                margin-left: 12px;
+    
+                h3 {
+                    font-size: $h3;
+                    color: $main-color3;
+                    margin-bottom: 114px;
+                }
+    
+                p {
+                    font-size: $h5;
+                    color: $main-color3;
+                }
+            }
+        }
+    }
+}
+
+.darkmode {
+    background: $main-color2;
+    .wrapper {
+
+        max-width: $container-size;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 110px;
+        padding-top: 120px;
+
+        @media (max-width: 1200px){
+            width: 90%;
+        }
+
+        .dark {
+            display: flex;
+            align-items: center;
+            margin-bottom: 65px;
+            
+
+            img {
+                width: 80px;
+                height: 80px;
+                margin-right: 20px;
+
+                @media (max-width: 600px){
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            h5 {
+                font-size: $h5;
+                color: $main-color1;
+                font-weight: bold;
+                margin-right: 5px;
+
+                @media (max-width: 425px){
+                    font-size: 20px;
+                }
+
+                @media (max-width: 350px){
+                    font-size: 15px;
+                }
+            }
+
+            #toggle {
+                position: relative;
+                display: block;
+                width: 100px;
+                height: 54px;
+                border-radius: 180px;
+                cursor: pointer;
+                background: $main-color1;
+                transition: 0.5s;
+
+                @media (max-width: 600px){
+                    width: 50px;
+                    height: 30px;
+                }
+                
+                .indicator {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 54px;
+                    height: 54px;
+                    background: #fff;
+                    border-radius: 50%;
+                    transform: scale(0.9);
+                    transition: 0.5s;
+
+                    @media (max-width: 600px){
+                        width: 30px;
+                        height: 30px;
+                    }
+                    
+                }
+            }
+        }
+        .darkmode .wrapper .dark #toggle.active .indicator {
+            left: 46px;
+          }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 600px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .image {
+
+                display: flex;
+                align-items: center;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 20px;
+    
+                    @media (max-width: 600px){
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+    
+                h5 {
+                    font-size: $h5;
+                    font-weight: bold;
+                    color: $main-color1;
+                    margin-right: 100px;
+
+                    @media (max-width: 425px){
+                        font-size: 20px;
+                    }
+    
+                    @media (max-width: 350px){
+                        font-size: 15px;
+                    }
+    
+                    @media (max-width: $smart-break){
+                        margin-right: 30px;
+                    }
+    
+                    @media (max-width: 660px){
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .form-outer {
+                max-width: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                
+                .container-profile{
+
+                    @media (max-width: 660px){
+                        margin-top: 35px;
+                    }
+                    .form{
+                        .form-input{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+
+                            input {
+                                outline: none;
+                                border-style: none;
+                                padding: 15px 30px;
+                                font-size: 25px;
+                                display: block;
+                                width: 700px;
+                                border-radius: 20px;
+
+                                @media (max-width: 1200px){
+                                    width: 600px;
+                                }
+
+                                @media (max-width: $tablet-break){
+                                    width: 500px;
+                                }
+
+                                @media (max-width: 930px){
+                                    width: 400px;
+                                }
+
+                                @media (max-width: 830px){
+                                    width: 330px;
+                                }
+
+                                @media (max-width: $smart-break){
+                                    width: 300px;
+                                }
+
+                                @media (max-width: 660px){
+                                    width: 250px;
+                                }
+
+                                @media (max-width: 660px){
+                                    width: 100%;
+                                }
+
+                            }
+
+                            .icon {
+                                position: absolute;
+                                right: 20px;
+                                top: 0;
+                                font-size: 25px;
+                                color: $main-color1;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+.footer-wrapper {
+    background-color: $main-color1;
+
+    .container {
+        @extend %container;
+        padding: 50px 0;
+        @include flex-parms;
+
+        .content {
+            width: 290px;
+            text-align: center;
+
+            &>h5 {
+                color: white;
+                font-size: $h5;
+                margin-bottom: 20px;
+
+                @media (max-width: $other-break) {
+                    font-size: 24px;
+                    margin-left: 14px;
+                }
+            }
+
+            .icon {
+
+                &>a>img {
+                    margin-left: 20px;
+                }
+            }
+
+            @media (max-width: 535px) {
+                width: 240px;
+            }
+
+            @media (max-width: $other-break) {
+                flex-direction: column;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: $other-break) {
+            flex-direction: column;
+        }
+    }
+}

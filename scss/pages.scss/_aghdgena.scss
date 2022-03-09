@@ -1,0 +1,176 @@
+.aghdgena {
+    font-family: 'Helvetica Neue LT GEO';
+    scroll-behavior: smooth;
+}
+.s-2 {
+    background-color: $main-color3;
+  
+    & > .container {
+      @extend %container;
+      text-align: center;
+      padding-top: 90px;
+  
+      & > .content {
+        & > a > img {
+          margin-bottom: 56px;
+        }
+  
+        & > h5 {
+          color: $main-color1;
+          font-size: 40px;
+          margin-bottom: 25px;
+  
+          @media (max-width: $smart-break) {
+            font-size: 32px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 25px;
+          }
+        }
+  
+        & > h6 {
+          color: $main-color1;
+          font-size: 30px;
+          margin-bottom: 40px;
+  
+          & > a {
+            color: $main-color1;
+            text-decoration: underline;
+          }
+  
+          @media (max-width: $smart-break) {
+            font-size: 25px;
+          }
+  
+          @media (max-width: $other-break) {
+            font-size: 18px;
+          }
+        }
+      }
+  
+      & > .forms {
+        width: 620px;
+        margin: 0 auto;
+  
+        & > form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+  
+          & > input[type="email"] {
+            width: 600px;
+            padding: 13px 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            margin: 0 auto;
+            margin-bottom: 30px;
+  
+            @media (max-width: $smart-break) {
+              width: 400px;
+              margin-bottom: 20px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 320px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 240px;
+            }
+          }
+  
+          & > input[type="submit"] {
+            width: 500px;
+            margin: 0 auto;
+            background-color: $main-color1;
+            color: white;
+            font-size: 26px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 56px;
+            cursor: pointer;
+  
+            @media (max-width: $smart-break) {
+              width: 280px;
+              font-size: 18px;
+            }
+  
+            @media (max-width: 550px) {
+              width: 220px;
+              font-size: 15px;
+            }
+  
+            @media (max-width: $other-break) {
+              width: 150px;
+              font-size: 10px;
+            }
+          }
+        }
+  
+        @media (max-width: $smart-break) {
+          width: 530px;
+          margin: 0 auto;
+        }
+  
+        @media (max-width: 550px) {
+          width: 400px;
+        }
+  
+        @media (max-width: $other-break) {
+          width: 260px;
+        }
+      }
+    }
+  }
+  
+
+.footer-wrapper {
+    background-color: $main-color1;
+
+    .container {
+        @extend %container;
+        padding: 50px 0;
+        @include flex-parms;
+
+        .content {
+            width: 290px;
+            text-align: center;
+
+            &>h5 {
+                color: white;
+                font-size: $h5;
+                margin-bottom: 20px;
+
+                @media (max-width: $other-break) {
+                    font-size: 24px;
+                    margin-left: 14px;
+                }
+            }
+
+            .icon {
+
+                &>a>img {
+                    margin-left: 20px;
+                }
+            }
+
+            @media (max-width: 535px) {
+                width: 240px;
+            }
+
+            @media (max-width: $other-break) {
+                flex-direction: column;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: $other-break) {
+            flex-direction: column;
+        }
+    }
+}

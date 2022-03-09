@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body class="profile">
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="wrapper">
+                <ul class="logo">
+                    <li>
+                        <a href="../index.html"><img src="../images/icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <h1>კორექთული</h1>
+                    </li>
+                </ul>
+                <ul id="menu" class="menu-ul">
+                    <li><a class="nav-a" href="profile.html"> Nino@gmail.com</a></li>
+                </ul>
+
+                <div id="burger-menu" class="burger-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <h3>გაიმარტივე წერა</h3>
+            <h5>შეამოწმეთ ქართული ტექსტების მართლწერა</h5>
+        </div>
+    </header>
+
+    <section class="darkmode">
+        <div class="wrapper">
+            <div class="dark">
+                <img src="../images/half-moon.png" alt="halfmoon">
+                <h5>ღამის რეჟიმი</h5>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="image">
+                    <img src="../images/book.png" alt="book">
+                    <h5>ლექსიკონი</h5>
+                </div>
+                <div class="form-outer">
+                    <div class="container-profile">
+                        <div class="form">
+                            <div class="form-input">
+                                <input  type="text" placeholder="ძებნა" name="search">
+                                <a href="profile2.html" class="icon"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-wrapper">
+        <div class="container">
+          <a href="../index.html"> <img src="../images/icon.png" alt="icon" /></a>
+          <div class="content">
+            <h5>შემოგვიერთდით</h5>
+            <div class="icon">
+              <a href=""><img src="../images/fbb.png" alt="facebook"></a>
+              <a href=""><img src="../images/inn.png" alt="instagram"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function (){
+            toggle.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
