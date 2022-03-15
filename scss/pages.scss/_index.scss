@@ -76,11 +76,19 @@
                     .menu-ul {
                         display: none;
 
+<<<<<<< Updated upstream
                         &>li {
                             &>.nav-a {
                                 display: block;
                                 line-height: 30px;
                             }
+=======
+                    &>li {
+                        &>.nav-a {
+                            display: block;
+                            line-height: 30px;
+
+>>>>>>> Stashed changes
                         }
                     }
 
